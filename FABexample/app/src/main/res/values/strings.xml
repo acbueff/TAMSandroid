@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FABexample</string>
+    <string name="fabs">FLOATING ACTION BUTTONS ARE THE BEST</string>
+    <string name="action_settings">Settings</string>
+</resources>
