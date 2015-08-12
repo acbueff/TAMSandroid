@@ -1,4 +1,4 @@
-package com.dynamiclogic.tams;
+package com.dynamiclogic.tams.utils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -16,7 +16,6 @@ import android.support.v4.view.MotionEventCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -26,7 +25,6 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 
 import com.nineoldandroids.view.animation.AnimatorProxy;
-import com.dynamiclogic.tams.ViewDragHelper;
 import com.sothree.slidinguppanel.library.R;
 
 public class SlidingUpPanelLayout extends ViewGroup {
@@ -1160,7 +1158,6 @@ public class SlidingUpPanelLayout extends ViewGroup {
     }
 
     private void onPanelDragged(int newTop) {
-        Log.d(TAG, "onPanelDragged called");
         mLastNotDraggingSlideState = mSlideState;
         mSlideState = PanelState.DRAGGING;
         // Recompute the slide offset based on the new top position
@@ -1185,7 +1182,6 @@ public class SlidingUpPanelLayout extends ViewGroup {
 
     @Override
     protected boolean drawChild(Canvas canvas, View child, long drawingTime) {
-        Log.d(TAG, "drawChild called");
         boolean result;
         final int save = canvas.save(Canvas.CLIP_SAVE_FLAG);
 
@@ -1258,10 +1254,9 @@ public class SlidingUpPanelLayout extends ViewGroup {
     @Override
     public void draw(Canvas c) {
         super.draw(c);
-        Log.d(TAG, "draw called");
 
         // draw the shadow
-   /*     if (mShadowDrawable != null) {
+        if (mShadowDrawable != null) {
             final int right = mSlideableView.getRight();
             final int top;
             final int bottom;
@@ -1275,7 +1270,7 @@ public class SlidingUpPanelLayout extends ViewGroup {
             final int left = mSlideableView.getLeft();
             mShadowDrawable.setBounds(left, top, right, bottom);
             mShadowDrawable.draw(c);
-        }*/
+        }
     }
 
     /**
@@ -1365,7 +1360,6 @@ public class SlidingUpPanelLayout extends ViewGroup {
 
         @Override
         public void onViewDragStateChanged(int state) {
-            Log.d(TAG, "onViewDragStateChanged called");
             if (mDragHelper.getViewDragState() == ViewDragHelper.STATE_IDLE) {
                 mSlideOffset = computeSlideOffset(mSlideableView.getTop());
                 applyParallaxForCurrentSlideOffset();
@@ -1400,7 +1394,6 @@ public class SlidingUpPanelLayout extends ViewGroup {
 
         @Override
         public void onViewPositionChanged(View changedView, int left, int top, int dx, int dy) {
-            Log.d(TAG, "onViewPositionChanged called");
             onPanelDragged(top);
             invalidate();
         }

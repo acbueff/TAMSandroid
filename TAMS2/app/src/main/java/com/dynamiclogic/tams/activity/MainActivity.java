@@ -1,9 +1,11 @@
-package com.dynamiclogic.tams;
+package com.dynamiclogic.tams.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.dynamiclogic.tams.R;
 
 
 public class MainActivity extends Activity {
@@ -11,7 +13,8 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main);
+
     }
 
 

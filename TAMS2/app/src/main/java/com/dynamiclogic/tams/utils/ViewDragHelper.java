@@ -15,7 +15,7 @@
  */
 
 
-package com.dynamiclogic.tams;
+package com.dynamiclogic.tams.utils;
 
 import android.content.Context;
 import android.support.v4.view.MotionEventCompat;
