@@ -8,18 +8,25 @@
     android:gravity="bottom"
     tools:context=".MainActivity">
 
-    <TextView
+<!--    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="Main Content"
-        android:textSize="16sp" />
+        android:text="MAP GOES HERE"
+        android:background="@color/highlighted_text_material_light"
+        android:textSize="36sp" />-->
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/google_maps"/>
+    android:gravity="center"
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center|top"
         android:text="The Awesome Sliding Up Panel"
-        android:textSize="16sp" />
+        android:textSize="26sp" />
 
 </com.dynamiclogic.tams.SlidingUpPanelLayout>

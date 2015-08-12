@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/root/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-cb45de25033c3665320dd2cafe5df424fd028375.jar" />
+    </item>
+    <item
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/pre-dexed/debug/library-2.4.0-966625304e7208badec13abab7a99ab1be33bd6f.jar" />
+    </item>
+    <item
+        jar="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c6d79137693d494dee16372d3921f919eb724ced">
+        <dex dex="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/pre-dexed/debug/classes-3df24f8c15a7e2679046ec43268b7fbf6033af4c.jar" />
+    </item>
+    <item
+        jar="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/pre-dexed/debug/classes-e99e59c1841a9d0525f6404ff49a17925c4eb36d.jar" />
+    </item>
+    <item
+        jar="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-380780db45891c9f40bffffb1c1141d274b538e6.jar" />
+    </item>
+    <item
+        jar="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/pre-dexed/debug/classes-70ecb6fa2a6971e171c9f8fda61899ccb68828a6.jar" />
+    </item>
+    <item
+        jar="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/exploded-aar/com.sothree.slidinguppanel/library/3.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="76351d3022d4a2803789c01046aa0aa4b0d5d134">
+        <dex dex="/home/nati/workspace/TAMSandroid/TAMS2/app/build/intermediates/pre-dexed/debug/classes-c58e5dd2e540987b3293904b869ce31c4c4f4459.jar" />
+    </item>
+
+</items>
