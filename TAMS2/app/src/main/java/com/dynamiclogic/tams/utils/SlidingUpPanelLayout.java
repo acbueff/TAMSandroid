@@ -1,5 +1,11 @@
 package com.dynamiclogic.tams.utils;
 
+/*
+* This code was adopted from:
+*       Umano, AndroidSlidingUpPanel, (2015), GitHub repository,
+*       https://github.com/umano/AndroidSlidingUpPanel
+*/
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -23,9 +29,9 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.ListView;
 import android.widget.ScrollView;
-
 import com.nineoldandroids.view.animation.AnimatorProxy;
 import com.sothree.slidinguppanel.library.R;
+
 
 public class SlidingUpPanelLayout extends ViewGroup {
 

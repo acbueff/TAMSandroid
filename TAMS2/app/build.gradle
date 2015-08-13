@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'whatalias'
+            storeFile file('/home/nati/Android/tams_keystore.jks')
+            storePassword 'arcgis'
+            keyPassword 'arcgis'
+        }
+    }
     compileSdkVersion 21
     buildToolsVersion "22.0.1"
-
     defaultConfig {
         applicationId "com.dynamiclogic.tams"
         minSdkVersion 14
@@ -15,6 +22,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 }
@@ -24,4 +32,5 @@ dependencies {
     compile 'com.sothree.slidinguppanel:library:3.1.1'
     compile 'com.android.support:appcompat-v7:21.0.+'
     compile 'com.android.support:recyclerview-v7:22.0.0'
+    compile 'com.google.android.gms:play-services:7.5.0'
 }

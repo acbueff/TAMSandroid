@@ -17,6 +17,12 @@
 
 package com.dynamiclogic.tams.utils;
 
+/*
+* This code was adopted from:
+*       Umano, AndroidSlidingUpPanel, (2015), GitHub repository,
+*       https://github.com/umano/AndroidSlidingUpPanel
+*/
+
 import android.content.Context;
 import android.support.v4.view.MotionEventCompat;
 import android.support.v4.view.VelocityTrackerCompat;
