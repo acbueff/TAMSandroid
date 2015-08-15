@@ -1,15 +1,16 @@
 package com.dynamiclogic.tams.activity.fragment;
 
 import android.app.Activity;
-import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.dynamiclogic.tams.R;
@@ -19,19 +20,27 @@ public class PanelFragment extends Fragment {
     private static final String TAG = MyAdapter.class.getSimpleName();
 
     private OnFragmentInteractionListener mListener;
+
     private ListView mListView;
+    private String[] favoriteTVShows = {"the office", "game of thrones", "everybody loves raymond"};
+    private ListAdapter mListAdapter;
 
     public PanelFragment() { }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+
         return inflater.inflate(R.layout.fragment_panel, container, false);
     }
 
@@ -44,6 +53,28 @@ public class PanelFragment extends Fragment {
             throw new ClassCastException(activity.toString()
                     + " must implement OnFragmentInteractionListener");
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+
+        Log.d(TAG, "getView().getId() = " + getActivity().findViewById(R.id.fragment_panel));
+
+        mListAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, favoriteTVShows);
+        mListView = (ListView) getView().findViewById(R.id.listView);
+        mListView.setAdapter(mListAdapter);
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.d(TAG, String.format("at position (%d+1) : %s ", position,
+                        String.valueOf(mListAdapter.getItem(position))));
+
+            }
+        });
+
     }
 
     @Override
@@ -64,7 +95,7 @@ public class PanelFragment extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        public void onFragmentInteraction();
+        void onFragmentInteraction();
     }
 
     private class MyAdapter extends BaseAdapter {

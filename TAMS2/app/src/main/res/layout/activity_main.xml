@@ -17,6 +17,7 @@
         layout="@layout/fragment_map" />
 
     <fragment
+        android:id="@+id/fragment_panel"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         class="com.dynamiclogic.tams.activity.fragment.PanelFragment" />
