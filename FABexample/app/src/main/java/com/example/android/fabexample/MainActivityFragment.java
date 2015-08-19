@@ -1,5 +1,6 @@
 package com.example.android.fabexample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -44,6 +45,10 @@ public class MainActivityFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Pressed New Node", Toast.LENGTH_SHORT ).show();
+
+                Intent intent = new Intent(getActivity(), AddAsset.class);
+                startActivity(intent);
+
 
             }
         });
