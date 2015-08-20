@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">MapPrototype</string>
     <string name="title_activity_maps">Map</string>
+    <string name="add_asset_button">Add</string>
+    <string name="cancel_asset_button">Cancel</string>
+    <string name="main_button_add">Add Asset</string>
 </resources>
